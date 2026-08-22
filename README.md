@@ -42,8 +42,8 @@ Used to inspect the HTML structure of the Zameen.com page and identify the selec
 
 Performs the actual property listing extraction and saves the collected data into a CSV file.
 
-**⚙️ Installation
-1. Clone the repository**
+** Installation**
+**1. Clone the repository**
 git clone https://github.com/YOUR-USERNAME/zameen-property-scraper.git
 cd zameen-property-scraper
 
@@ -52,12 +52,11 @@ python -m venv venv
 
 **3. Activate the virtual environment**
 
-Windows:
+**Windows**:
 
 venv\Scripts\activate
 
-
-macOS / Linux:
+**macOS / Linux:**
 
 source venv/bin/activate
 
@@ -70,25 +69,23 @@ playwright install chromium
 **▶️ How to Run**
 Step 1 — Inspect the page
 
-Run:
+**Run:**
 
 python step1_inspect.py
 
-
 Use the output to identify the actual HTML selectors used by the property listings.
 
-Step 2 — Run the scraper
+**Step 2 — Run the scraper**
 
 After confirming the selectors, run:
 
 python step2_scrape.py
 
-
 The scraped data will be saved to:
 
 zameen_dha_city_karachi.csv
 
-📊 Data Collected
+**📊 Data Collected**
 Field	Description
 title	Property listing title
 price	Property asking price
@@ -102,24 +99,12 @@ url	Property listing URL
 
 The scraper contains several sections marked:
 
-ADJUST ME
-
-
-These selectors may need to be updated if the website's HTML structure changes.
-
-For example:
-
-cards = page.query_selector_all("li article, article")
-
-
 The step1_inspect.py script helps identify the correct selectors before running the scraper.
 
-📄 Output
-
+**📄 Output**
 The scraper generates:
 
 zameen_dha_city_karachi.csv
-
 
 The CSV file contains structured property listing data that can be further analyzed using Pandas, NumPy, Excel, Power BI, or other data-analysis tools.
 
@@ -134,7 +119,6 @@ The CSV file contains structured property listing data that can be further analy
  Configurable search locations
  Excel export
  Automated scheduled scraping
-
 
 **Waqar Aamir
 If you found this project useful, feel free to ⭐ star the repository and explore the code.**_I_
